@@ -504,6 +504,7 @@ function addPin(lat,lng,label,catId,notes){
   updatePinCount();
   renderPinsList();
   renderCatsTab();
+  saveToStorage();
 }
 
 function removePin(id){
@@ -515,6 +516,7 @@ function removePin(id){
   renderPinsList();
   renderCatsTab();
   showToast('Pin removed','error');
+  saveToStorage();
 }
 
 // ─── MODAL ───────────────────────────────────────────────────────────────────
